@@ -8,13 +8,17 @@ import { RegisterComponent } from './Components/register/register.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {MatInputModule} from '@angular/material/input';
 import { NavbarComponent } from './Components/navbar/navbar.component';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import { SidebarComponent } from './Components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
