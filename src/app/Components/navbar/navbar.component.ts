@@ -6,5 +6,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-  
+  @Output() toggleSidebar=new EventEmitter<void>()
+  ontoggleSidebar(){
+    this.toggleSidebar.emit()
+  }
 }

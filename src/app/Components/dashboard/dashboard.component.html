@@ -1,12 +1,17 @@
 <div class="container">
     <div class="header">
-        <app-navbar></app-navbar>
+        <app-navbar (toggleSidebar)="toggleSidebar()"></app-navbar>
+        <!-- header container -->
     </div>
     <div class="main-container">
         <div class="sidebar">
-
-            <app-sidebar></app-sidebar>
+            <app-sidebar [isSidebarOpen]="isSidebarOpen"></app-sidebar>
+            <!-- sidebar container -->
         </div>
-        <div class="main"></div>
+       
+        <div class="main"[style.margin-left.px]="isSidebarOpen?0:-200">
+
+            maiin wala
+        </div>
     </div>
 </div>

@@ -10,6 +10,7 @@ import {MatInputModule} from '@angular/material/input';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
+import { NotesCardComponent } from './Components/notes-card/notes-card.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
     RegisterComponent,
     NavbarComponent,
     DashboardComponent,
-    SidebarComponent
+    SidebarComponent,
+    NotesCardComponent
   ],
   imports: [
     BrowserModule,
