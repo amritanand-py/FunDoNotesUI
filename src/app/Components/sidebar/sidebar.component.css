@@ -7,10 +7,11 @@
 
 .sidebarLines{
     display: flex;
-    height: 7vh;
+    height: 8vh;
     gap: 50px;
     align-items: center;
     border-radius: 0px 50px 50px 0px; 
+    
     
 }
 .sidebarLines:hover{
@@ -23,10 +24,15 @@ p{
 
 #sidebarContainer{
     margin-top: 10px;
+    width: 350px;
 
 }
 
 .material-symbols-outlined{
     font-size: 28px;
     margin-left: 12%;
+}
+.sidebarContainer{
+    display: flex;
+    align-items: start;
 }

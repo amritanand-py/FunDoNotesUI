@@ -7,11 +7,12 @@
     font-size: 32px;
     margin-top: 0.5%;
     color: black;
+    
 }
 
 #navbar{
     padding-top: 1%;
-    height: 60px;
+    /* height: 60px; */
     
     display: flex;
 }
@@ -34,6 +35,7 @@ h3{
 #menu,#keeplogo,#FundoNotestextLogo,#refreshLogo,#settingLogo{
     margin-left: 15px;
     margin-top: 0.5%;
+    
 }
 #userLogo{
     height: 40px;

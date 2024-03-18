@@ -8,6 +8,8 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class NavbarComponent {
   @Output() toggleSidebar=new EventEmitter<void>()
   ontoggleSidebar(){
+    console.log("toggling");
+    
     this.toggleSidebar.emit()
   }
 }
