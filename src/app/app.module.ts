@@ -11,6 +11,8 @@ import { NavbarComponent } from './Components/navbar/navbar.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { NotesCardComponent } from './Components/notes-card/notes-card.component';
+import { CanvasComponent } from './Components/canvas/canvas.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,12 +22,14 @@ import { NotesCardComponent } from './Components/notes-card/notes-card.component
     NavbarComponent,
     DashboardComponent,
     SidebarComponent,
-    NotesCardComponent
+    NotesCardComponent,
+    CanvasComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),

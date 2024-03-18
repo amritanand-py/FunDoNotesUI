@@ -1,0 +1,29 @@
+<div class="mainCanvas" *ngIf="tappedOnSearch; then beforeclick else afterclicksearch"></div>
+  <ng-template #beforeclick>
+    <div class="mainCanvas">
+
+        <div
+        id="defaultSearch"
+        (click)="tappedOnSearch = !tappedOnSearch"
+      >
+        <p id="Textorientation">Take a Note...</p>
+        <div class="logos">
+          <div class="material-symbols-outlined" id="checkboxlogo">check_box</div>
+          <div class="material-symbols-outlined" id="brushlogo">brush</div>
+          <div class="material-symbols-outlined" id="gallerylogo">image</div>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  
+
+  <ng-template #afterclicksearch>
+    <div id="renderedSearch" class="mainCanvas">
+        <div id="takeNotes">
+            <textarea [(ngModel)]="textareaContent" (input)="adjustTextareaHeight($event)" placeholder="Title" title="Title"></textarea>
+            <textarea [(ngModel)]="textareaContent" (input)="adjustTextareaHeight($event)" placeholder="Take a Note ..."></textarea>
+        
+        </div>
+    </div>
+  </ng-template>
+

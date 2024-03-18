@@ -1,0 +1,47 @@
+.mainCanvas{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0px;
+    box-sizing: border-box;
+}
+#defaultSearch{
+    width: 40%;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 13px;
+    outline: none;
+    /* margin-left: 15vw; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.material-symbols-outlined{
+    padding: 10px 10px;
+    /* font-size: 30px; */
+    height: 30px;
+    width: 30px;
+    display: inline;
+
+}
+.material-symbols-outlined:hover{
+    background-color: gray;
+    border-radius: 50%;
+
+}
+#takeNotes{
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+
+textarea {
+    width: 300px; /* Fixed width */
+    min-height: 50px; /* Minimum height */
+    resize: none; /* Disable resizing */
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    border-style: none;
+  }
