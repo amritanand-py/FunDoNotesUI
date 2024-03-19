@@ -13,6 +13,7 @@ import { SidebarComponent } from './Components/sidebar/sidebar.component';
 import { NotesCardComponent } from './Components/notes-card/notes-card.component';
 import { CanvasComponent } from './Components/canvas/canvas.component';
 import { FormsModule } from '@angular/forms';
+import { LogobarComponent } from './Components/logobar/logobar.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     DashboardComponent,
     SidebarComponent,
     NotesCardComponent,
-    CanvasComponent
+    CanvasComponent,
+    LogobarComponent
   ],
   imports: [
     BrowserModule,

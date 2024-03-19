@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#logobar{
+    background-color: aqua;
+    width: 15vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.material-symbols-outlined{
+    border-radius: 50%;
+    font-size: 28px;
+}
+
+.material-symbols-outlined:hover{
+    background-color: grey;
+}
