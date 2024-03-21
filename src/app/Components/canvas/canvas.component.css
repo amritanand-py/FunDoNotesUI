@@ -45,3 +45,10 @@ textarea {
     overflow-y: hidden; /* Hide vertical scrollbar */
     border-style: none;
   }
+
+#NotesDisplay{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+}
