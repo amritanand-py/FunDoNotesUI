@@ -1,1 +1,12 @@
-<p>notes-card works!</p>
+<br><br><br><br><br>
+<div id="notescard">
+
+    <div id="carddiv">
+        <textarea [(ngModel)]="textarea1Content" (input)="adjustTextareaHeight('textarea1', $event)" placeholder="Textarea 1 Placeholder"></textarea>
+    <!-- </div>
+    <div id="notesbody-Card" class="textfield"> -->
+        <textarea [(ngModel)]="textarea2Content" (input)="adjustTextareaHeight('textarea2', $event)" placeholder="Textarea 2 Placeholder"></textarea>
+    </div>
+    <div id="notesFooter"><app-logobar></app-logobar></div>
+
+</div>
