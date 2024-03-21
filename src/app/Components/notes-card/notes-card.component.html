@@ -1,5 +1,5 @@
 <br><br><br><br><br>
-<div id="notescard">
+<div id="notescard" (mouseenter)="showSecondDiv = true" (mouseleave)="showSecondDiv = false">
 
     <div id="carddiv">
         <textarea [(ngModel)]="textarea1Content" (input)="adjustTextareaHeight('textarea1', $event)" placeholder="Textarea 1 Placeholder"></textarea>
@@ -7,6 +7,10 @@
     <div id="notesbody-Card" class="textfield"> -->
         <textarea [(ngModel)]="textarea2Content" (input)="adjustTextareaHeight('textarea2', $event)" placeholder="Textarea 2 Placeholder"></textarea>
     </div>
-    <div id="notesFooter"><app-logobar></app-logobar></div>
+    <div style="height: 30px; width: 100%;">
+        <div id="notesFooter" [style.display]="showSecondDiv ? 'block' : 'none'">
+            <app-logobar></app-logobar>
+        </div>
+    </div>
 
 </div>

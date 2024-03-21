@@ -14,4 +14,7 @@ export class NotesCardComponent {
     textarea.style.height = 'auto';
     textarea.style.height = textarea.scrollHeight + 'px';
   }
+
+
+  showSecondDiv = false;
 }
